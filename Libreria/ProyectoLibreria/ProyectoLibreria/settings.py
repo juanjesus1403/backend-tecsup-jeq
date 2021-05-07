@@ -79,8 +79,12 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'LibreriaDjango', #nombre de la base de datos
         'USER': 'root', #usuario del servidor de la base de datos
+        'PASSWORD':'root',
         'HOST':'localhost',
-        'PORT':'3306'
+        'PORT':'3306',
+        'OPTIONS': {
+            'sql_mode': 'traditional',
+        }
     }
 }
 
